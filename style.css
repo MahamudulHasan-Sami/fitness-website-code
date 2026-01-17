@@ -15,7 +15,7 @@ body {
     color: #FFFFFF;
 }
 
-main {
+main>section {
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -28,6 +28,14 @@ main {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     line-height: 24px;
+}
+
+.title-primary {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 14px;
 }
 
 .btn-primary {
@@ -156,18 +164,21 @@ main {
 .hero-trainer-img3 {
     background-color: rgba(255, 255, 255, 0.089);
     border-radius: 12px;
-    max-width: 150px;
+    max-width: 206px;
     padding: 20px 23px;
     position: relative;
     top: -350px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-/*.hero-trainer-img3-circle {
+.hero-trainer-img3-circle {
     background-color: red;
-    max-width: 40px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
-}*/
+}
 
 .hero-trainer-img3-title {
     font-size: 1.5rem;
@@ -181,7 +192,51 @@ main {
     color: rgba(239, 237, 232, 0.65);
 }
 
+/* habbit section style */
 
+.habit-section {
+    margin-top: 80px;
+}
+
+.habit-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habit-bottom {
+    margin-top: 58px;
+    display: flex;
+    gap: 40px;
+}
+
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habit-card-img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+    max-width: 180px;
+}
+
+.habit-card-title {
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+.habit-card-description {
+    font-size: 0.8rem;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 /* media query */
@@ -232,24 +287,54 @@ main {
     }
     .hero-trainer-img1 {
         top: -70px;
-        left: 30px;
+        left: 40px;
     }
     .hero-trainer-img2 {
         max-width: 120px;
         height: 74px;
         padding: 12px 18px;
         top: -580px;
-        left: 220px;
+        left: 255px;
         text-align: center;
     }
     .hero-trainer-img2-title {
         font-size: 1.8rem;
     }
     .hero-trainer-img3 {
-        max-width: 120px;
+        max-width: 155px;
         padding: 15px 17px;
         top: -480px;
         left: 32px;
+    }
+    .hero-trainer-img3-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* habbit section style */
+
+    .habit-section {
+        max-width: 338px;
+        margin: 320px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .habit-top {
+        max-width: 318px;
+        text-align: center;
+    }
+    .habit-top-title {
+        font-size: 2rem;
+    }
+    .habit-bottom {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .habit-card {
+        max-width: 231px;
     }
 }
 
