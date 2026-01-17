@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+
+body {
+    font-family: "inter";
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(17, 17, 17, 1);
+    color: #FFFFFF;
+}
+
+main {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.text-primary {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    line-height: 24px;
+}
+
+.btn-primary {
+    background-color: #E6533C;
+    color: #FFFFFF;
+    border-radius: 42px;
+    padding: 16px 45px;
+    font-size: 1.12rem;
+}
+
+/* main style */
+
+/* navbar style */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+}
+
+.nav-title {
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 120%;
+}
+
+.nav-links-info {
+    border: 1px solid rgba(148, 144, 144, 0.288);
+    border-radius: 39px;
+    gap: 47px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.nav-link-list {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    line-height: 120%;
+}
+
+.nav-links-info .home {
+    background-color: #E6533C;
+    border-radius: 46px;
+    padding: 8px 20px;
+    margin-left: 4px;
+}
+
+.nav-links-info .about {
+    padding-right: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* hero section style */
+
+.hero-section {
+    max-width: 1060px;
+    margin: 0 auto;
+    height: 516px;
+    gap: 54px;
+    margin-top: 96px;
+}
+
+.hero-left {
+    max-width: 520px;
+    height: 440px;
+}
+
+.hero-left-title {
+    font-size: 4.8rem;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+.hero-left-description {
+    margin-bottom: 28px;
+}
+
+.hero-left-btn2 {
+    background-color: transparent;
+}
+
+.hero-trainer-img1 {
+    position: relative;
+    top: -70px;
+    left: 120px;
+}
+
+.hero-trainer-img2 {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 12px;
+    max-width: 193px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 24px;
+    position: relative;
+    top: -530px;
+    left: 350px;
+}
+
+.hero-trainer-img2-title {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.hero-trainer-img2-description {
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-trainer-img3 {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 12px;
+    max-width: 150px;
+    padding: 20px 23px;
+    position: relative;
+    top: -350px;
+}
+
+/*.hero-trainer-img3-circle {
+    background-color: red;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}*/
+
+.hero-trainer-img3-title {
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: #FAFAF9;
+    margin-bottom: 8px;
+}
+
+.hero-trainer-img3-description {
+    font-size: 1rem;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+
+    /* shared style */
+    .btn-primary {
+        border-radius: 42px;
+        padding: 16px 40px;
+        font-size: 1.12rem;
+    }
+    
+    /* navbar style */
+
+    .navbar {
+        margin: 52px auto 0;
+        max-width: 353px;
+
+    }
+    .nav-links-container {
+        display: none;
+    }
+    .menu-icon {
+        display: inline;
+        background-color: none;
+    }
+
+    /* hero section style */
+
+    .hero-section {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .hero-left {
+        max-width: 353px;
+        height: 336px;
+        margin: 0 auto;
+    }
+    .hero-left-title {
+        font-size: 2.25rem;
+    }
+    .hero-left-btns {
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero-left-btn2 {
+        padding: 16px 20px;
+    }
+    .hero-trainer-img1 {
+        top: -70px;
+        left: 30px;
+    }
+    .hero-trainer-img2 {
+        max-width: 120px;
+        height: 74px;
+        padding: 12px 18px;
+        top: -580px;
+        left: 220px;
+        text-align: center;
+    }
+    .hero-trainer-img2-title {
+        font-size: 1.8rem;
+    }
+    .hero-trainer-img3 {
+        max-width: 120px;
+        padding: 15px 17px;
+        top: -480px;
+        left: 32px;
+    }
+}
+
