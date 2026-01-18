@@ -260,6 +260,108 @@ main>section {
     border-radius: 18px;
 }
 
+/* training section style */
+
+.training-section {
+    border: 2px solid skyblue;
+    margin-top: 100px;
+    max-width: 1160px;
+}
+
+.training-section-top {
+    max-width: 580px;
+    margin-bottom: 40px;
+}
+
+.training-section-bottom {
+    border: 2px solid silver;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.training-section-bottom-cards {
+    position: relative;
+}
+
+.training-section-bottom-title {
+    position: absolute;
+    z-index: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.training-section-bottom-img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.box-1 {
+    background-color: rgb(6, 255, 209);
+}
+
+.box-2 {
+    background-color: rgb(255, 0, 0);
+    grid-column: 2/4;
+}
+
+.box-3 {
+    background-color: rgba(204, 204, 204, 0.473);
+    grid-column: 4/5 ;
+}
+
+.box-4 {
+    background-color: rgba(255, 249, 249, 0.411);
+    grid-column: 1/3;
+}
+
+.box-5 {
+    background-color: rgb(68, 255, 0);
+}
+
+.box-6 {
+    background-color: rgb(90, 130, 224);
+}
+
+.training-section-bottom-title1 {
+    color: black;
+    top: 160px;
+}
+
+.training-section-bottom-title2 {
+    top: 20px;
+    left: 20px;
+}
+
+.training-section-bottom-title3 {
+    top: 150px;
+    left: 20px;
+}
+
+.training-section-bottom-title4 {
+    top: 50px;
+    left: 400px;
+}
+
+.training-section-bottom-title5 {
+    top: 150px;
+    left: 30px;
+}
+
+.training-section-bottom-title6 {
+    top: 150px;
+    left: 30px;
+}
+
+
+
+
+
+
+
+
 /* media query */
 @media screen and (max-width: 576px) {
 
@@ -386,6 +488,35 @@ main>section {
     .run-right-img {
         max-width: 287px;
         height: 170px;
+    }
+
+    /* training section style */
+
+    .training-section {
+        margin-top: 60px;
+        padding: 20px;
+    }
+    .training-section-top {
+        max-width: 353px;
+        margin-bottom: 40px;
+    }
+    .training-section-top-title {
+        font-size: 2rem;
+    }
+    .training-section-bottom {
+        border: 2px solid silver;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .training-section-bottom-cards {
+        grid-column: auto;
+    }
+    .box-3, .box-6 {
+        display: none;
+    }
+    .training-section-bottom-title4 {
+        top: 100px;
+        left: 80px;
     }
 }
 
